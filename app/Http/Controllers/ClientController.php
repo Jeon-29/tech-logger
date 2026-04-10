@@ -21,5 +21,7 @@ class ClientController extends Controller
             'issue_description' =>$request->issue_description,
             'status' => 'pending',
         ]); 
+
+        return redirect('/devices/create')->with('success', 'Repair log created successfully!');
     }
 }

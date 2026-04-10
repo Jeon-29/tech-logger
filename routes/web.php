@@ -9,3 +9,5 @@ Route::get('/', function () {
 Route::get('/devices/create', function () {
     return view('devices.create');
 });
+
+Route::post('/devices', [App\Http\Controllers\ClientController::class, 'store']);
