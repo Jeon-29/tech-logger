@@ -28,4 +28,11 @@ class ClientController extends Controller
     {
         return view('devices.create');
     }
+    public function index()
+    {
+        $totalRepairs = Device::count();
+        $pendingRepairs = Device::where('status', 'pending')->count();
+
+        return view('dashboard', compact('totalRepairs', 'pendingRepairs'));
+    }
 }
