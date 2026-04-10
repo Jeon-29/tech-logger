@@ -9,4 +9,4 @@ Route::get('/', function () {
 
 Route::get('/devices/create', [App\Http\Controllers\ClientController::class, 'create']);
 
-Route::post('/device', [ClientController::class, 'store']);
+Route::post('/device/store', [ClientController::class, 'store']);
