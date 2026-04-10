@@ -5,7 +5,7 @@
 
         <h2 style="color: #6a8caf; text-align: center;">New Repair Log</h2>
 
-        <form action="/device/store" method="POST">
+        <form action="/device" method="POST">
             @csrf
             <input type="text" placeholder="Client Name" name="client_name" style="width: 100%; margin-bottom: 10px; border-radius: 10px; border: none; padding: 10px;">
             <input type="text" placeholder="Device Model" name="device_model" style="width: 100%; margin-bottom: 10px; border-radius: 10px; border: none; padding: 10px;">
