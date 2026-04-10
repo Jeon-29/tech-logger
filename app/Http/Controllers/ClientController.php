@@ -22,7 +22,7 @@ class ClientController extends Controller
             'status' => 'pending',
         ]); 
 
-        return redirect('/devices/create')->with('success', 'Repair log created successfully!');
+        return "Successfully created a new repair log for " . $request->client_name . " with device model " . $request->device_model . ".";
     }
     public function create()
     {
