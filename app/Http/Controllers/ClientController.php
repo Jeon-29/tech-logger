@@ -24,4 +24,8 @@ class ClientController extends Controller
 
         return redirect('/devices/create')->with('success', 'Repair log created successfully!');
     }
+    public function create()
+    {
+        return view('devices.create');
+    }
 }
