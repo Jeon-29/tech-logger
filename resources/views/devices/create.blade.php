@@ -7,9 +7,9 @@
 
         <form action="/device/store" method="POST">
             @csrf
-            <input type="text" placeholder="Client Name" style="width: 100%; margin-bottom: 10px; border-radius: 10px; border: none; padding: 10px;">
-            <input type="text" placeholder="Device Model" style="width: 100%; margin-bottom: 10px; border-radius: 10px; border: none; padding: 10px;">
-            <textarea placeholder="Issue Description" style="width: 100%; margin-bottom: 10px; border-radius: 10px; border: none; padding: 10px;"></textarea>
+            <input type="text" placeholder="Client Name" name="client_name" style="width: 100%; margin-bottom: 10px; border-radius: 10px; border: none; padding: 10px;">
+            <input type="text" placeholder="Device Model" name="device_model" style="width: 100%; margin-bottom: 10px; border-radius: 10px; border: none; padding: 10px;">
+            <textarea placeholder="Issue Description" name="issue_description" style="width: 100%; margin-bottom: 10px; border-radius: 10px; border: none; padding: 10px;"></textarea>
             <button type="submit">Save Log</button>
         </form>
     </div>
