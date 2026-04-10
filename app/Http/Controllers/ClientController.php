@@ -9,11 +9,17 @@ class ClientController extends Controller
 {
     public function store(Request $request)
     {
+        $request->validate([
+            'client_name' => 'required|string|max:255',
+            'device_model' => 'required|string|max:255',
+            'issue_description' => 'required|string',
+        ]);
+
         Device::create([
             'client_name' =>$request->client_name,
             'device_model' =>$request->device_model,
             'issue_description' =>$request->issue_description,
             'status' => 'pending',
-        ]);
+        ]); 
     }
 }
