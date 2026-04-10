@@ -22,6 +22,6 @@
     <button type="submit" class="btn btn-light w-100 fw-bold py-3 rounded-4 shadow-sm">Create Account</button>
 </form>
 <div class="text-center mt-4">
-    <a href="/login" class="text-black text-decoration-none small opacity-75">Already have an account? Login</a>
+    <a href="/login" class="link text-black small">Already have an account? Login</a>
 </div>
 @endsection

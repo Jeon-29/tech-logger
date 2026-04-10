@@ -53,6 +53,13 @@
             color: white;
             border-radius: 15px;
         }
+        .link:hover {
+            text-decoration: underline;
+        }
+        .link {
+            transition: all 0.2s ease;
+            text-decoration: none;
+        }
     </style>
 </head>
 
