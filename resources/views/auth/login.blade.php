@@ -3,7 +3,7 @@
 @section('title', 'Login')
 
 @section('content')
-<h3 class="text-white text-center mb-4">Welcome Back</h3>
+<h3 class="text-black text-center mb-4">Welcome Back</h3>
 <form action="/login" method="POST">
     @csrf
     <div class="mb-3">
@@ -15,6 +15,6 @@
     <button type="submit" class="btn btn-light w-100 fw-bold py-3 rounded-4 shadow-sm">Login</button>
 </form>
 <div class="text-center mt-4">
-    <a href="/register" class="text-white text-decoration-none small opacity-75">Create an account</a>
+    <a href="/register" class="text-black text-decoration-none small opacity-75">Create an account</a>
 </div>
 @endsection
